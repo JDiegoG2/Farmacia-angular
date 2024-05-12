@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { APIHttpService } from '../../Core/APIHttpService';
 import { Proveedor } from '../../models/Models';
 
@@ -19,7 +19,7 @@ throw new Error('Method not implemented.');
 
   proveedorForm: FormGroup = this.formBuilder.group({
     id: 0,
-    nroDocumento: '',
+    nroDocumento: ['', [Validators.required, Validators.maxLength(8), Validators.pattern('^[0-9]*$')]], // Aplica las validaciones
     tipoDocumento: '',
     nombre: '',
     apellido: '',
