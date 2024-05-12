@@ -19,7 +19,7 @@ throw new Error('Method not implemented.');
 
   proveedorForm: FormGroup = this.formBuilder.group({
     id: 0,
-    nroDocumento: ['', [Validators.required, Validators.maxLength(8), Validators.pattern('^[0-9]*$')]], // Aplica las validaciones
+    nroDocumento: '', // Aplica las validaciones
     tipoDocumento: '',
     nombre: '',
     apellido: '',
