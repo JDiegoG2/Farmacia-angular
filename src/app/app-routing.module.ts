@@ -6,6 +6,7 @@ import { ProveedorComponent } from './proveedores/proveedores.component';
 import { ProductoComponent } from './producto/producto.component';
 import { Categoria } from '../models/Models';
 import { CategoriaComponent } from './categoria/categoria.component';
+import { ClienteComponent } from './cliente/cliente.component';
 
 
 
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'proveedores', component: ProveedorComponent },
   { path: 'productos', component: ProductoComponent },
   { path: 'categorias', component: CategoriaComponent },
+  { path: 'clientes', component: ClienteComponent },
 ];
 
 

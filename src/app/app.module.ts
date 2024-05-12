@@ -9,6 +9,7 @@ import { RegisterComponent } from './register/register.component';
 import { ProveedorComponent } from './proveedores/proveedores.component';
 import { ProductoComponent } from './producto/producto.component';
 import { CategoriaComponent } from './categoria/categoria.component';
+import { ClienteComponent } from './cliente/cliente.component';
 
 
 
@@ -19,7 +20,8 @@ import { CategoriaComponent } from './categoria/categoria.component';
     RegisterComponent,
     ProveedorComponent,
     ProductoComponent,
-    CategoriaComponent
+    CategoriaComponent,
+    ClienteComponent
   ],
   imports: [
     BrowserModule,
