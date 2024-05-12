@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RegisterComponent } from './register/register.component';
 import { ProveedorComponent } from './proveedores/proveedores.component';
 import { ProductoComponent } from './producto/producto.component';
+import { CategoriaComponent } from './categoria/categoria.component';
 
 
 
@@ -17,7 +18,8 @@ import { ProductoComponent } from './producto/producto.component';
     LoginComponent,
     RegisterComponent,
     ProveedorComponent,
-    ProductoComponent
+    ProductoComponent,
+    CategoriaComponent
   ],
   imports: [
     BrowserModule,
