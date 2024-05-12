@@ -5,15 +5,15 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class AuthService {
-  private baseApiUrl = '/api/';
+  private baseApiUrl = 'http://localhost:7070';
 
   constructor(private http: HttpClient) {}
 
   register(user: any) {
-    return this.http.post(this.baseApiUrl + 'register', user);
+    return this.http.post(this.baseApiUrl + '/register', user);
   }
 
   login(credentials: any) {
-    return this.http.post(this.baseApiUrl + 'login', credentials, { responseType: 'text' });
+    return this.http.post(this.baseApiUrl + '/login', credentials, { responseType: 'text' });
   }
 }

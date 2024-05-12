@@ -7,7 +7,7 @@ import { Venta, Proveedor, Producto, Cliente, Categoria } from '../models/Models
   providedIn: 'root'
 })
 export class APIHttpService {
-  private baseUrl = '/api'; // OJO! esto debido a la configuracion en proxy.conf.json para mejo cors
+  private baseUrl = 'http://localhost:7070'; // OJO! esto debido a la configuracion en proxy.conf.json para mejo cors
 
   constructor(private http: HttpClient) { }
 
@@ -39,7 +39,7 @@ export class APIHttpService {
   }
 
   getProveedores(): Observable<Proveedor[]> {
-    return this.http.get<Proveedor[]>(`http://localhost:7070/api/proveedores`);
+    return this.http.get<Proveedor[]>(`${this.baseUrl}/api/proveedores`);
   }
 
   getProveedorById(proveedorId: number): Observable<Proveedor> {
