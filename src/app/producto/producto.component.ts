@@ -23,7 +23,6 @@ export class ProductoComponent implements OnInit {
         precio: 0,
         categoria: '',
         proveedores: ''
-
       });
 
       constructor(private http: APIHttpService, private formBuilder: FormBuilder) {
@@ -42,9 +41,6 @@ export class ProductoComponent implements OnInit {
           this.productoForm.value.nombre,
           this.productoForm.value.stock,
           this.productoForm.value.precio,
-          this.productoForm.value.categoria,
-          this.productoForm.value.proveedores,
-
         );
 
         this.http.createProducto(newProducto).subscribe({

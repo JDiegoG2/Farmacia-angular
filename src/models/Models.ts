@@ -23,8 +23,6 @@ export class Categoria {
       public nombre: string = '',
       public stock: number = 0,
       public precio: number = 0,
-      public categoria: Categoria = new Categoria(),
-      public proveedores: Proveedor = new Proveedor()
     ) {}
   }
   
