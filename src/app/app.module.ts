@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RegisterComponent } from './register/register.component';
 import { ProveedorComponent } from './proveedores/proveedores.component';
+import { ProductoComponent } from './producto/producto.component';
 
 
 
@@ -15,7 +16,8 @@ import { ProveedorComponent } from './proveedores/proveedores.component';
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    ProveedorComponent
+    ProveedorComponent,
+    ProductoComponent
   ],
   imports: [
     BrowserModule,
